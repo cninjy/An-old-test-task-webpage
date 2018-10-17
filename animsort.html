@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<HTML>
+   <HEAD>
+   <META charset="utf-8">
+   <TITLE>Тестовое задание: анимированная сортировка.</TITLE>
+   <!----CSS stylesheets go here--->
+   <LINK rel="stylesheet" href="css/staticdecorations.css">
+   <LINK rel="stylesheet" href="css/animated.css">
+   <!----JSs go here--->
+   <SCRIPT src="js/jquery.js"></SCRIPT>
+   <SCRIPT src="js/objectsandparts.js"></SCRIPT>
+   <SCRIPT src="js/sortings.js"></SCRIPT>
+   <SCRIPT src="js/animations.js"></SCRIPT>
+   <SCRIPT src="js/anim-chain.js"></SCRIPT>
+   <SCRIPT src="js/mainscript.js"></SCRIPT>
+   </HEAD>
+   <BODY>
+   <H1 id="thetitle">Тестовое задание - анимированная сортировка</H1>
+   <BR>
+   <FORM name="setupform"> 
+      <TABLE width="100%" cellspacing="0" cellpadding="4">
+         <TR>
+            <TD align="right">Количество чисел:</TD>
+            <TD><INPUT name="quantity" type="number" min="1" max="50" value="10" step="1" pattern="[0-9]{1,3}" required></TD>
+         </TR>
+		 <TR>
+            <TD align="right">Способ сортировки:</TD>
+            <TD>
+			   <SELECT name="sortmethod">
+                  <OPTION selected="selected" value="0">Сортировка "пузырями"</OPTION>
+	              <OPTION value="1">Сортировка деревом</OPTION>
+               </SELECT>
+			</TD>
+         </TR>
+		 <TR>
+            <TD align="right">Направление сортировки:</TD>
+            <TD>
+			   <SELECT name="sortorder">
+                  <OPTION selected="selected" value="0">По возрастанию</OPTION>
+	              <OPTION value="1">По убыванию</OPTION>
+               </SELECT>
+			</TD>
+         </TR>
+      </TABLE>
+   </FORM>
+   <BR>
+   <BUTTON name="bgendigits"><img src="img/swirl.png">Генерировать числа</BUTTON>
+   <BUTTON name="engage" disabled><img src="img/magic.png">Сортировка!</BUTTON>
+   <BUTTON name="haste" disabled><img src="img/thunder.png">Показать результат</BUTTON>
+   <DIV id="drawingzone">
+   </DIV>
+   <DIV id="docmanual">
+      <P>Порядок пользования:</P>
+	  <OL>
+	     <LI>Указать количество чисел для последовательности от 1 до 50.</LI>
+		 <LI>Нажать кнопку "Генерировать числа".</LI>
+		 <LI>Выбрать алгоритм и направление сортировки.</LI>
+		 <LI>Нажать кнопку "Сортировка".</LI>
+	  </OL>
+	  <P></P>
+   </DIV>
+   <P id="authorsign">Тестовое задание. Design by Lebedev DV ©2017. Made using JQuery library v3.1.1</P>
+   </BODY>
+</HTML>

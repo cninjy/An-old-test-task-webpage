@@ -1,0 +1,48 @@
+/*This CSS will store the styles of inanimate objects */
+body {
+   background: linear-gradient(to top, white, #89BDD7);
+}
+h1#thetitle {
+   color: black;
+   font-family: verdana;
+   background: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 10px,
+    #89BDD7 10px,
+    #89BDD7 20px
+  ),
+  linear-gradient(
+    to bottom,
+    #89BDD7,
+    #3879CC
+  )
+}
+
+p#authorsign {
+   color: black;
+   font-family: verdana;
+   font-size: 70%;
+}
+
+div#docmanual {
+   color: black;
+   font-family: verdana;
+}
+
+form {
+   border: 4px solid #B3BBB6;
+   border-radius: 8px;
+   width: 300px;
+   background: #89BDD7;
+}
+
+button {
+   border-radius: 4px;
+   vertical-align: middle;
+   background: #EDEDED;
+}
+
+img {
+   vertical-align: middle;
+}

@@ -1,0 +1,31 @@
+/* This CSS will define the basic properties of the objects we'll animate, including the "canvas" */
+div#drawingzone {            /*Overall parameters of the drawing zone*/
+   height: 500px;
+   overflow: auto;
+   border: 4px solid #666666;
+   border-radius: 3px;
+   position: relative;
+   background: repeating-linear-gradient(
+                                          to bottom,
+                                          #BEC5D6,
+                                          #BEC5D6 1px,
+                                          #EEEEF6 0px,
+                                          #EEEEF6 40px);
+}
+
+div.digitobject {            /*Default parameters for our flying digits*/
+   height: 35px;
+   width: 35px;
+   border: 2px solid black;
+   border-radius: 8px;
+   position: absolute;
+   text-align: center;
+   color: black;
+   opacity: 1;
+}
+
+div.dummy {
+   height: 0px;
+   width: 0px;
+   position: absolute;
+}
